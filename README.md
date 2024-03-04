@@ -1,5 +1,7 @@
 # Project Overview
 
+- keywords: TF-IDF; Inverted Index; MapReduce
+
 The objective of this project is to develop a search engine using `MapReduce` to crawl a website and implement keyword-based searching of webpage content. The purpose of the search engine is to provide the most relevant webpages based on the keywords entered by the user. **A simple approach is to calculate the frequency of each word in the webpage and sort the webpages based on the word frequency.** Whenever a user enters a keyword, the webpage with the highest word frequency is returned. However, this method cannot handle common words well and does not properly handle multiple keyword searches. Therefore, the experiment uses `TF-IDF` as a measure of the relevance of keywords to webpages.
 
 Considering that webpage titles often represent the content of the webpage, the calculation of TF-IDF values in the experiment does not directly use word frequency but uses a weighted form of word frequency: words appearing in the title are weighted 100 times more than words appearing in the body. This weighted word frequency is referred to as "rank."
