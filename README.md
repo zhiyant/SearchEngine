@@ -44,7 +44,12 @@ The code structure for the server and client is as follows:
      <token> <idf>|[<rank>@<line_offset>@<filename>@[<word_offset>];...]
      ```
 
+   ![first-index](/images/first index.png)
+
+   
+
 3. Building a Secondary Index:
+
    - The project generates a secondary index file through Job2.
    - The input is the inverted index files part-r-00000, part-r-00001, part-r-00002..., in the format:
      ```
@@ -54,6 +59,8 @@ The code structure for the server and client is as follows:
      ```
      <token> <index_filename>@<line_offset_in_index>
      ```
+     
+     ![secondary index](images/secondary index.png)
 
 4. Entry Point of the Program:
    - Reads the input files, primary index files, and secondary index file locations at the start.
@@ -62,10 +69,16 @@ The code structure for the server and client is as follows:
 
 5. Online Query Processing:
    - The online processing part of the search engine needs to handle a user's input sentence and segment the sentence. 
+
    - Based on the obtained keywords and information in the index files, the search engine sorts the webpages where the keywords appear and finally displays the webpages with the highest relevance to these keywords. 
+
    - The specific query process is as follows:
      1. The user enters a query sentence, and the search engine tokenizes it and determines whether the obtained keywords are stop words.
      2. Opens the secondary index file, locates the keyword information in the inverted index file, and maintains a list storing TF-IDF values and webpage information (original filename, line offset, and word offset). Opens the inverted index file at the corresponding position, gets the keyword's IDF and rank (weighted word frequency) in the original webpage, and stores the top 10 webpage information with the highest rank and TF-IDF values into the list.
+     
+     search result:
+     
+     ![result](/images/search result.png)
 
 # Collaborator
 
