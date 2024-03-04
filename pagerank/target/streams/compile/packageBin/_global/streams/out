@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/hduser_/final/pagerank/target/scala-2.12/sparkpagerank-project_2.12-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SparkPageRank.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hduser_/final/pagerank/target/scala-2.12/classes/SparkPageRank.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SparkPageRank$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/hduser_/final/pagerank/target/scala-2.12/classes/SparkPageRank$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

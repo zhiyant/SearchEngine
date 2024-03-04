@@ -1,0 +1,1 @@
+spark-submit --class SparkPageRank sparkpagerank-project_2.12-0.1.jar

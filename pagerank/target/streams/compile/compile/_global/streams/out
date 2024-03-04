@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/hduser_/final/pagerank/src/main/scala/pagerank.scala:53:44: value mapValues is not a member of org.apache.spark.rdd.RDD[String][0m
+[0m[[0m[31merror[0m] [0m[0m      val defaultRanksRdd = missingKeysRdd.mapValues(_ => 0.15)[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
